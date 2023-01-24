@@ -41,11 +41,10 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "host",
+      name: "api-manager",
       filename: "remoteEntry.js",
       remotes: {
-        about: "about@http://localhost:3000/remoteEntry.js",
-        users: "users@http://localhost:4000/remoteEntry.js",
+        catalog: "catalog@http://localhost:3000/remoteEntry.js",
       },
       exposes: {},
       shared: {

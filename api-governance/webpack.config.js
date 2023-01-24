@@ -41,11 +41,11 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "about",
+      name: "catalog",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./About": "./src/About.tsx",
+        "./Catalog": "./src/Catalog.tsx",
       },
       shared: {
         ...deps,
